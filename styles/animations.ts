@@ -21,66 +21,66 @@ export const animations = {
   // Animation Keyframes
   keyframes: {
     fadeIn: {
-      from: { opacity: 0 },
-      to: { opacity: 1 },
+      from: { opacity: '0' },
+      to: { opacity: '1' },
     },
     slideUp: {
       from: { 
-        opacity: 0, 
+        opacity: '0', 
         transform: 'translateY(20px)' 
       },
       to: { 
-        opacity: 1, 
+        opacity: '1', 
         transform: 'translateY(0)' 
       },
     },
     slideDown: {
       from: { 
-        opacity: 0, 
+        opacity: '0', 
         transform: 'translateY(-20px)' 
       },
       to: { 
-        opacity: 1, 
+        opacity: '1', 
         transform: 'translateY(0)' 
       },
     },
     slideLeft: {
       from: { 
-        opacity: 0, 
+        opacity: '0', 
         transform: 'translateX(20px)' 
       },
       to: { 
-        opacity: 1, 
+        opacity: '1', 
         transform: 'translateX(0)' 
       },
     },
     slideRight: {
       from: { 
-        opacity: 0, 
+        opacity: '0', 
         transform: 'translateX(-20px)' 
       },
       to: { 
-        opacity: 1, 
+        opacity: '1', 
         transform: 'translateX(0)' 
       },
     },
     scaleIn: {
       from: { 
-        opacity: 0, 
+        opacity: '0', 
         transform: 'scale(0.95)' 
       },
       to: { 
-        opacity: 1, 
+        opacity: '1', 
         transform: 'scale(1)' 
       },
     },
     scaleOut: {
       from: { 
-        opacity: 1, 
+        opacity: '1', 
         transform: 'scale(1)' 
       },
       to: { 
-        opacity: 0, 
+        opacity: '0', 
         transform: 'scale(0.95)' 
       },
     },

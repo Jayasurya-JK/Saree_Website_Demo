@@ -33,8 +33,8 @@ const config: Config = {
         border: tokens.colors.border,
       },
       fontFamily: {
-        serif: ['var(--font-crimson)', ...tokens.typography.fontFamily.serif],
-        sans: ['var(--font-inter)', ...tokens.typography.fontFamily.sans],
+        serif: tokens.typography.fontFamily.serif,
+        sans: tokens.typography.fontFamily.sans,
         tamil: tokens.typography.fontFamily.tamil,
       },
       fontSize: tokens.typography.fontSize,

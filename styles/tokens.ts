@@ -102,21 +102,21 @@ export const tokens = {
     
     // Font Weights
     fontWeight: {
-      light: 300,
-      normal: 400,
-      medium: 500,
-      semibold: 600,
-      bold: 700,
+      light: '300',
+      normal: '400',
+      medium: '500',
+      semibold: '600',
+      bold: '700',
     },
     
     // Line Heights
     lineHeight: {
-      none: 1,
-      tight: 1.25,
-      snug: 1.375,
-      normal: 1.5,
-      relaxed: 1.625,
-      loose: 2,
+      none: '1',
+      tight: '1.25',
+      snug: '1.375',
+      normal: '1.5',
+      relaxed: '1.625',
+      loose: '2',
     },
     
     // Letter Spacing

@@ -9,7 +9,7 @@ export default function NotFound() {
           <div className="text-center">
             <Heading1 className="mb-4">404</Heading1>
             <Body className="mb-8 text-xl">
-              Page not found. The page you're looking for doesn't exist.
+              Page not found. The page you&apos;re looking for doesn&apos;t exist.
             </Body>
             <Link 
               href="/"

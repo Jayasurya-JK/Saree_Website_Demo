@@ -1,23 +1,28 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Lato } from "next/font/google";
+import { Crimson_Pro, Inter } from "next/font/google";
 import "./globals.css";
 
-const playfair = Playfair_Display({
+const crimsonPro = Crimson_Pro({
   subsets: ["latin"],
-  variable: "--font-playfair",
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-crimson",
   display: "swap",
 });
 
-const lato = Lato({
-  weight: ["400", "700"],
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-lato",
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-inter",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Premium Saree Boutique - Rooted in Tradition",
-  description: "Discover handcrafted silk, cotton, and handloom sarees celebrating heritage and craftsmanship",
+  title: "Premium Saree Boutique - Heritage in Soul. Modern in Execution.",
+  description: "Discover handcrafted South Indian silk, cotton, and handloom sarees celebrating heritage and craftsmanship. Premium quality, authentic tradition.",
+  keywords: ["saree", "silk saree", "cotton saree", "handloom", "South Indian saree", "traditional wear"],
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -26,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${playfair.variable} ${lato.variable}`}>
+    <html lang="en" className={`${crimsonPro.variable} ${inter.variable}`}>
       <body className="font-sans antialiased">{children}</body>
     </html>
   );

@@ -36,9 +36,9 @@ export const useCartStore = create<CartState>()(
             };
           }
           
-          // Add new item
+          // Add new item with crypto random UUID for better uniqueness
           const newItem: CartItem = {
-            id: `${product.id}-${Date.now()}`,
+            id: `${product.id}-${crypto.randomUUID()}`,
             product,
             quantity,
             subtotal: product.price * quantity,

@@ -5,6 +5,9 @@
 export const SITE_NAME = 'Saree Boutique';
 export const SITE_DESCRIPTION = 'Premium South Indian Saree Boutique - Heritage in soul. Modern in execution.';
 
+// Animation Constants
+export const BASE_TRANSITION_MS = 350;
+
 export const NAV_LINKS = [
   { label: 'Collections', href: '/collections' },
   { label: 'Our Story', href: '/our-story' },

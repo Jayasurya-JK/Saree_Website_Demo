@@ -3,11 +3,14 @@
  * Calm and elegant animations for premium feel
  */
 
+// Base transition duration - matches BASE_TRANSITION_MS in lib/constants.ts
+const BASE_TRANSITION_MS = 350;
+
 export const animations = {
   // Transition Durations (in milliseconds)
   transition: {
     fast: 200,
-    base: 350,   // Base transition - calm and unhurried
+    base: BASE_TRANSITION_MS,   // Base transition - calm and unhurried
     slow: 600,
   },
   

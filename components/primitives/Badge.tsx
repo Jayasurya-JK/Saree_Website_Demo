@@ -3,12 +3,14 @@ import { cn } from '@/lib/utils';
 
 interface BadgeProps {
   children: React.ReactNode;
-  variant?: 'default' | 'success' | 'warning' | 'info';
+  variant?: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'info';
   className?: string;
 }
 
 const variantClasses = {
   default: 'bg-border-light text-text-secondary',
+  primary: 'bg-maroon-500 text-ivory',
+  secondary: 'bg-deepGreen-500 text-ivory',
   success: 'bg-deepGreen-100 text-deepGreen-700',
   warning: 'bg-rust/10 text-rust',
   info: 'bg-indigo-100 text-indigo-700',

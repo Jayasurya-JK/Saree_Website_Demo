@@ -1,23 +1,13 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Lato } from "next/font/google";
 import "./globals.css";
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair",
-  display: "swap",
-});
-
-const lato = Lato({
-  weight: ["400", "700"],
-  subsets: ["latin"],
-  variable: "--font-lato",
-  display: "swap",
-});
-
 export const metadata: Metadata = {
-  title: "Premium Saree Boutique - Rooted in Tradition",
-  description: "Discover handcrafted silk, cotton, and handloom sarees celebrating heritage and craftsmanship",
+  title: "Premium Saree Boutique - Heritage in Soul. Modern in Execution.",
+  description: "Discover handcrafted South Indian silk, cotton, and handloom sarees celebrating heritage and craftsmanship. Premium quality, authentic tradition.",
+  keywords: ["saree", "silk saree", "cotton saree", "handloom", "South Indian saree", "traditional wear"],
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -26,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${playfair.variable} ${lato.variable}`}>
+    <html lang="en">
       <body className="font-sans antialiased">{children}</body>
     </html>
   );
